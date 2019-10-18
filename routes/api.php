@@ -21,6 +21,6 @@ Route::prefix('siswa')->group(function(){
     Route::get('/','SiswaController@index');
     Route::post('/','SiswaController@store');
     Route::get('/{id}','SiswaController@show');
-    Route::post('/{id}','SiswaController@update');
+    Route::put('/{id}','SiswaController@update');
     Route::delete('/{id}','SiswaController@destroy');
 });
